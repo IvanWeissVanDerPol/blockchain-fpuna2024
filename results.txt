@@ -1,0 +1,105 @@
+PS C:\Users\WEISSIVA\Documents\FPUNA\Blockchain\blockchain-fpuna2024> & C:/Users/WEISSIVA/AppData/Local/Programs/Python/Python312/python.exe c:/Users/WEISSIVA/Documents/FPUNA/Blockchain/blockchain-fpuna2024/parcial1/IvanWeissVanDerPol/main.py
+Adding node with data: test1
+Adding node with data: test2
+Adding node with data: test3
+Adding node with data: test4
+Adding node with data: test5
+Adding node with data: test6
+Adding node with data: test7
+Adding node with data: test8
+Merkle Tree Structure:
+Root Hash: e32b64200e61b47cb8a7cc4897ccbf289a03bd527b706df20786291b11ec5137, Data: db4b3e3ee48682fb15cd3d7d12b42a2caa796da68f28d5b39c577908e2f3ff84, aff8d02bc563ffba975ef3d4fa96599f6a73184844bcce7c1e373949330a3b3e
+├── Hash: db4b3e3ee48682fb15cd3d7d12b42a2caa796da68f28d5b39c577908e2f3ff84, Data: 2147d5b1e1c8bdca3b061c43bdedc6322d645c225a16bb912eb7e3d4b8c02004, bf9285185d1d204f291177f7d15e055256cc7cd2a3df77dfa16b18fec91ebcc6
+│   ├── Hash: 2147d5b1e1c8bdca3b061c43bdedc6322d645c225a16bb912eb7e3d4b8c02004, Data: 1b4f0e9851971998e732078544c96b36c3d01cedf7caa332359d6f1d83567014, 60303ae22b998861bce3b28f33eec1be758a213c86c93c076dbe9f558c11c752
+│   │   ├── Hash: 1b4f0e9851971998e732078544c96b36c3d01cedf7caa332359d6f1d83567014, Data: test1
+│   │   └── Hash: 60303ae22b998861bce3b28f33eec1be758a213c86c93c076dbe9f558c11c752, Data: test2
+│   └── Hash: bf9285185d1d204f291177f7d15e055256cc7cd2a3df77dfa16b18fec91ebcc6, Data: fd61a03af4f77d870fc21e05e7e80678095c92d808cfb3b5c279ee04c74aca13, a4e624d686e03ed2767c0abd85c14426b0b1157d2ce81d27bb4fe4f6f01d688a
+│       ├── Hash: fd61a03af4f77d870fc21e05e7e80678095c92d808cfb3b5c279ee04c74aca13, Data: test3
+│       └── Hash: a4e624d686e03ed2767c0abd85c14426b0b1157d2ce81d27bb4fe4f6f01d688a, Data: test4
+└── Hash: aff8d02bc563ffba975ef3d4fa96599f6a73184844bcce7c1e373949330a3b3e, Data: 9022f2015240f375341a5125161183ed37223bc0bed45e2e472c64bf552dd871, 65609c500b694a4c60ac83f2e792de8e3eb2245a073eb2fc7e4f87963e878a01
+    ├── Hash: 9022f2015240f375341a5125161183ed37223bc0bed45e2e472c64bf552dd871, Data: a140c0c1eda2def2b830363ba362aa4d7d255c262960544821f556e16661b6ff, ed0cb90bdfa4f93981a7d03cff99213a86aa96a6cbcf89ec5e8889871f088727
+    │   ├── Hash: a140c0c1eda2def2b830363ba362aa4d7d255c262960544821f556e16661b6ff, Data: test5
+    │   └── Hash: ed0cb90bdfa4f93981a7d03cff99213a86aa96a6cbcf89ec5e8889871f088727, Data: test6
+    └── Hash: 65609c500b694a4c60ac83f2e792de8e3eb2245a073eb2fc7e4f87963e878a01, Data: bd7c911264aae15b66d4291b6850829aa96986b1d3ead34d1fdbfef27056c112, 1f9bfeb15fee8a10c4d0711c7eb0c083962123e1918e461b6a508e7146c189b2
+        ├── Hash: bd7c911264aae15b66d4291b6850829aa96986b1d3ead34d1fdbfef27056c112, Data: test7
+        └── Hash: 1f9bfeb15fee8a10c4d0711c7eb0c083962123e1918e461b6a508e7146c189b2, Data: test8
+
+Merkle Root: e32b64200e61b47cb8a7cc4897ccbf289a03bd527b706df20786291b11ec5137
+Looking for data: test1
+Data found at index 0 in leaves
+Merkle Proof
+  Level 2: Left sibling with hash 60303ae22b998861bce3b28f33eec1be758a213c86c93c076dbe9f558c11c752
+  Level 1: Left sibling with hash bf9285185d1d204f291177f7d15e055256cc7cd2a3df77dfa16b18fec91ebcc6
+  Level 0: Left sibling with hash aff8d02bc563ffba975ef3d4fa96599f6a73184844bcce7c1e373949330a3b3e
+Verification result for node 'test1': True
+
+Looking for data: test2
+Data found at index 1 in leaves
+Merkle Proof
+  Level 2: Right sibling with hash 1b4f0e9851971998e732078544c96b36c3d01cedf7caa332359d6f1d83567014
+  Level 1: Left sibling with hash bf9285185d1d204f291177f7d15e055256cc7cd2a3df77dfa16b18fec91ebcc6
+  Level 0: Left sibling with hash aff8d02bc563ffba975ef3d4fa96599f6a73184844bcce7c1e373949330a3b3e
+Verification result for node 'test2': True
+
+Looking for data: test3
+Data found at index 2 in leaves
+Merkle Proof
+  Level 2: Left sibling with hash a4e624d686e03ed2767c0abd85c14426b0b1157d2ce81d27bb4fe4f6f01d688a
+  Level 1: Right sibling with hash 2147d5b1e1c8bdca3b061c43bdedc6322d645c225a16bb912eb7e3d4b8c02004
+  Level 0: Left sibling with hash aff8d02bc563ffba975ef3d4fa96599f6a73184844bcce7c1e373949330a3b3e
+Verification result for node 'test3': True
+
+Looking for data: test4
+Data found at index 3 in leaves
+Merkle Proof
+  Level 2: Right sibling with hash fd61a03af4f77d870fc21e05e7e80678095c92d808cfb3b5c279ee04c74aca13
+  Level 1: Right sibling with hash 2147d5b1e1c8bdca3b061c43bdedc6322d645c225a16bb912eb7e3d4b8c02004
+  Level 0: Left sibling with hash aff8d02bc563ffba975ef3d4fa96599f6a73184844bcce7c1e373949330a3b3e
+Verification result for node 'test4': True
+
+Looking for data: test5
+Data found at index 4 in leaves
+Merkle Proof
+  Level 2: Left sibling with hash ed0cb90bdfa4f93981a7d03cff99213a86aa96a6cbcf89ec5e8889871f088727
+  Level 1: Left sibling with hash 65609c500b694a4c60ac83f2e792de8e3eb2245a073eb2fc7e4f87963e878a01
+  Level 0: Right sibling with hash db4b3e3ee48682fb15cd3d7d12b42a2caa796da68f28d5b39c577908e2f3ff84
+Verification result for node 'test5': True
+
+Looking for data: test6
+Data found at index 5 in leaves
+Merkle Proof
+  Level 2: Right sibling with hash a140c0c1eda2def2b830363ba362aa4d7d255c262960544821f556e16661b6ff
+  Level 1: Left sibling with hash 65609c500b694a4c60ac83f2e792de8e3eb2245a073eb2fc7e4f87963e878a01
+  Level 0: Right sibling with hash db4b3e3ee48682fb15cd3d7d12b42a2caa796da68f28d5b39c577908e2f3ff84
+Verification result for node 'test6': True
+
+Looking for data: test7
+Data found at index 6 in leaves
+Merkle Proof
+  Level 2: Left sibling with hash 1f9bfeb15fee8a10c4d0711c7eb0c083962123e1918e461b6a508e7146c189b2
+  Level 1: Right sibling with hash 9022f2015240f375341a5125161183ed37223bc0bed45e2e472c64bf552dd871
+  Level 0: Right sibling with hash db4b3e3ee48682fb15cd3d7d12b42a2caa796da68f28d5b39c577908e2f3ff84
+Verification result for node 'test7': True
+
+Looking for data: test8
+Data found at index 7 in leaves
+Merkle Proof
+  Level 2: Right sibling with hash bd7c911264aae15b66d4291b6850829aa96986b1d3ead34d1fdbfef27056c112
+  Level 1: Right sibling with hash 9022f2015240f375341a5125161183ed37223bc0bed45e2e472c64bf552dd871
+  Level 0: Right sibling with hash db4b3e3ee48682fb15cd3d7d12b42a2caa796da68f28d5b39c577908e2f3ff84
+Verification result for node 'test8': True
+
+Looking for data: invalid
+
+Verification result for node 'invalid': Leaf data not found in the Merkle Tree
+PS C:\Users\WEISSIVA\Documents\FPUNA\Blockchain\blockchain-fpuna2024>
+
+
+
+
+
+
+
+
+
+
